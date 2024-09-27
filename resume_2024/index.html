@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume 2024</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <page size="A4" class="page">
+    <!-- INFORMATION -->
+    <h2 class="name">Lê Huy Hoàng</h2>
+    <h4 class="job-title">Software engineer</h4>
+    <p class="contact">0389348740 - lhhoang98197@gmail.com - https://www.linkedin.com/in/huyhoang1997</p>
+    <!-- END INFORMATION -->
+    <div class="line"></div>
+    <div>
+      <h4 class="heading subject-title">Subject</h4>
+      <p>
+        I'm a developer with 4 years of experience. I have experience building from scratch and maintaining application services using NodeJS (NestJS) for the backend. Using ReactJS (NextJS) to build the UI. Write automation tests and perform manual tests. I also using some AWS services like EC2, S3, SES, SQS,... I setup the CI/CD at a basic level using Github Action and Gitlab CI. I'm always learning more to grow my ability to produce maintainable, readable code.
+      </p>
+    </div>
+    <div class="line"></div>
+    <h4 class="heading">Work experience</h4>
+    <div>
+      <p class="company-name">Rian Soft</p>
+      <p>Aug 2023 - now</p>
+      <div class="project">
+        <p class="project-name">Project: SkyJoy (onside Bstar solution)</p>
+        <p>Position: Back-end developer</p>
+        <p>Description: SkyJoy is a system that allow partner's end user earning points when they using partner's service like as: HD bank, Vietjet air. Users can using this points to redeem vouchers from another partners like: Phuc Long, CGV,...</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>
+            Implemented business requirements via microservice architecture with services using NestJS. Using PostgreSQL for the database with a master-slave replication model for each service.
+          </li>
+          <li>
+            Implemented synchronous communication between services via RESTful API.
+          </li>
+          <li>
+            Implemented asynchronous communication between services via a message broker using Google Pub/Sub.
+          </li>
+          <li>
+            Implemented caching data using Redis
+          </li>
+          <li>
+            Using Git with GitHub to management source code, review pull requests and provide feedbacks on code changes. Received feedbacks from others and learned from it.
+          </li>
+        </ul>
+      </div>
+      <div class="project">
+        <p class="project-name">Project: HDO oil bank</p>
+        <p>Position: Back-end developer</p>
+        <p>
+          Description: HDO oil bank is a system that allow users have electric vehicles to interact with charging stations. Users can track the charging speed of their electric vehicles, check the battery status, make online payments after each charging session, and booking a charging slot in advance before arriving at the station.
+        </p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>
+            Using Git with AWS CodeCommit to management source code, review pull requests and provide feedbacks on code changes. Received feedbacks from others and learned from it..
+          </li>
+          <li>
+            Implemented business requirements for back-end core service using NestJS. Using MySQL for database, Redis for caching.
+          </li>
+          <li>
+            Implemented communication with Notification service via AWS SQS.
+          </li>
+          <li>
+            Implemented features booking a charging slot, authentication using JWT, authorization with access control list.
+          </li>
+          <li>
+            Setup logger with trace ID using DataDog to log management
+          </li>
+        </ul>
+      </div>
+    </div>
+  </page>
+  <page size="A4" class="page">
+    <div>
+      <p class="company-name">Metacoders</p>
+      <p>Jun 2022 - Jul 2023</p>
+      <div class="project">
+        <p class="project-name">Project: Paction</p>
+        <p>Position: Full-stack developer</p>
+        <p>Description: Paction is a platform where users can sell and buy pet-related products. Buyers with purchasing needs can place orders, make payments and choose from available delivery services within the system.</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>
+            Implemented business requirements for back-end monolithic service using NestJS. Using PostgreSQL for database. AWS S3 for store metadata. AWS SNS for email service. AWS CloudWatch for log management
+          </li>
+          <li>
+            Implemented UI using NextJS (ReactJS). Integrate with APIs and state management. 
+          </li>
+          <li>
+            Setup eslint, prettier for code conventions. Setup logger with trace ID and stream log to AWS CloudWatch service. Upload file to AWS S3 service. Send email function using AWS SNS service
+          </li>
+          <li>
+            Implemented authentication using JWT, OAuth via Google, Apple, Facebook, KaKao. And authorization with role base access control (RBAC)
+          </li>
+          <li>
+            Implemented job queue using Redis
+          </li>
+          <li>
+            Implemented caching using Redis
+          </li>
+          <li>
+            Using Git with GitHub to management source code, review pull requests and provide feedbacks on code changes. Received feedbacks from others and learned from it.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="company-name">URBN8</p>
+      <p>Jun 2020 - Jun 2022</p>
+      <div class="project">
+        <p class="project-name">Project: EarthToday</p>
+        <p>Position: Back-end Developer</p>
+        <p>Description: EarthToday is a platform where nature protection organizations is partners can calling for support to fund-raise for their campaign. And users can determine donation to them and tracking their campaign in areas that donation</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>
+            Implemented business requirements for back-end core service using ExpressJS with Typescript. Using PostgreSQL for database, Redis for caching.
+          </li>
+          <li>
+            Implemented UI using NextJS (ReactJS). Integrate with APIs and state management. 
+          </li>
+          <li>
+            Setup ChaiJS to integration test.
+          </li>
+          <li>
+            Setup error tracking using Sentry.
+          </li>
+          <li>
+            Write unit test and integration test for implementation.
+          </li>
+          <li>
+            Using Git with GitHub to management source code, review pull requests and provide feedbacks on code changes. Received feedbacks from others and learned from it.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="line"></div>
+    <h4 class="heading">Skills</h4>
+    <p>Typescript, Javascript, NodeJS, NestJS, PostgreSQL, MySQL, Redis, AWS Cloud, ReactJS, NextJS</p>
+  </page>
+  <!-- <page size="A4"></page> -->
+</body>
+</html>
+
