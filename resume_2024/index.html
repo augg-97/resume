@@ -11,6 +11,7 @@
   <page size="A4" class="page">
     <!-- INFORMATION -->
     <h2 class="name">Lê Huy Hoàng</h2>
+    <!-- <h4 class="job-title">Full-stack Developer</h4> -->
     <h4 class="job-title">Full-stack Developer</h4>
     <p class="contact">0389348740 - lhhoang98197@gmail.com</p>
     <p class="contact">09/08/1997 - Hiep Binh Phuoc ward, Thu Duc city, Ho Chi Minh city</p>
@@ -18,18 +19,41 @@
     <div class="line"></div>
     <div>
       <h4 class="heading subject-title mar-top-1">Subject</h4>
-      <p>
-        My name is Lê Huy Hoàng! I have 4 years of experience as a full-stack developer.
-        I've been working with NodeJS using the NestJS and ExpressJS frameworks to build microservice applications,
-        databases like PostgreSQL, Cassandra, and Neo4J.
-        I also have experience with front-end development using ReactJS and NextJS.
-        And worked with tools like Redis for caching, Google Pub/Sub for async communication,
-        Docker and K8S for application deployment,
-        used GitLab CI and GitHub Actions for CI/CD,
-        and some AWS services like S3, SQS, SNS, EKS, ELB, and Lambda.
+      <!-- FULL STACK -->
+      <!-- <p>
+        I am a full-stack developer with 4 years of experience.
+        I've been working with NodeJS using the NestJS and ExpressJS for frameworks,
+        databases like PostgreSQL, MySQL, mongoDB, Cassandra, Neo4J and tools like Redis for caching,
+        Kafka for event streaming to build microservice applications.
+        I also using Docker and K8S for containerization,
+        and GitLab CI and GitHub Actions for CI/CD to deploy application,
+        and some AWS services like S3, SQS, SNS, EKS, ELB, and Lambda to serve for requirements of applications.
+        And I also have experience with front-end development using ReactJS and NextJS,
+        redux and redux toolkit and some libraries to build UI for applications,
+        to build UI for applications.
+        I am a developer who is always eager to learn and improve my skills to building scalable and maintainable applications.
       </p>
       <p>
-        I always want to write code that is readable and maintainable, and I try to learn new knowledge to build systems that are efficient in terms of performance and security.
+        I always want to write code that is readable and maintainable, 
+        and I try to learn new knowledge to build systems that are efficient in terms of performance and security.
+      </p> -->
+
+      <!-- BACK END -->
+      <p>
+        I am a full-stack developer with 4 years of experience.
+        I've been working with NodeJS using the NestJS and ExpressJS for frameworks,
+        databases like PostgreSQL, MySQL, mongoDB, Cassandra, Neo4J and tools like Redis for caching,
+        Kafka, Google Pub/Sub for event streaming to build microservice applications.
+        I also using Docker and K8S for containerization,
+        and GitLab CI and GitHub Actions for CI/CD to deploy application,
+        and some AWS services like S3, SQS, SNS, EKS, ELB, and Lambda to serve for requirements of applications.
+        And I also have experience with front-end development using ReactJS and NextJS
+        to build UI for applications.
+        I am a developer who is always eager to learn and improve my skills to building scalable and maintainable applications.
+      </p>
+      <p>
+        I always want to write code that is readable and maintainable, 
+        and I try to learn new knowledge to build systems that are efficient in terms of performance and security.
       </p>
     </div>
     <div class="line"></div>
@@ -38,28 +62,28 @@
       <p class="company-name">Rian Soft</p>
       <p>Aug 2023 - now</p>
       <div class="project mar-top-1">
-        <p class="project-name">Project: SkyJoy (onside Bstar solution)</p>
-        <p>Position: Full-stack developer</p>
-        <p>Description: SkyJoy is a system that allow partner's end user earning points when they using partner's service like as: HD bank, Vietjet air. Users can using this points to redeem vouchers from another partners like: Phuc Long, CGV,...</p>
+        <p class="project-name">Project: Vietjet Air SkyJoy (onside Galaxy holding)</p>
+        <p>Position: Back-end developer</p>
+        <p>Description: Vietjet Air SkyJoy is a loyalty program that allow user earning points when they buying Vietjet air tickets. Users can using this to redeem vouchers like: 4G/5G data, discount voucher</p>
         <p>Responsibilities:</p>
         <ul>
           <li>
-            Implemented business requirements via microservice architecture with services using NestJS. Using PostgreSQL for the database with a master-slave replication model for each service.
+            Designing and implementing Restful APIs, webhooks using NestJS for feature manage vouchers, and interact with Voucherify provider.
           </li>
           <li>
-            Implemented asynchronous communication between services via a message broker using Google Pub/Sub.
+            Designing PostgreSQL schema for feature manage vouchers and data from Voucherify. Using TypeORM to implementing migration schema, seeding and query data.
           </li>
           <li>
-            Implemented caching data using Redis.
+            Implemented Google Pub/Sub producer-consumer pattern to handle event data between services.
           </li>
           <li>
-            Integrate with third-party services using APIs and webhooks.
+            Monitored system performance and logging by using kibana dashboard for distributed tracing.
           </li>
           <li>
-            Using NextJS (ReactJS) and tailwindcss to build UI , React Query for APIs fetching, state management using redux, context and hooks.
+            Setup Unit test and integration test using JestJS, supertest and TestingModule of NestJS to make sure feature tested before deploy staging environment.
           </li>
           <li>
-            Contribute to code reviews and collaborate with team members to improve product quality.
+            Contribute to code reviews to improve source code quality.
           </li>
         </ul>
       </div>
@@ -67,53 +91,78 @@
         <p class="project-name">Project: HDO oil bank</p>
         <p>Position: Back-end developer</p>
         <p>
-          Description: HDO oil bank is a system that allow users have electric vehicles to interact with charging stations. Users can track the charging speed of their electric vehicles, check the battery status, make online payments after each charging session, and booking a charging slot in advance before arriving at the station.
+          Description: HDO oil bank is a mobile application that allow users interact with electric vehicle charging (EV charging). Users can check the battery status, make online payments after each charging session, and booking a charging slot in advance before arriving at the station.
         </p>
         <p>Responsibilities:</p>
         <ul>
           <li>
-            Implemented business requirements for back-end core service using NestJS. Using PostgreSQL for database.
+            Implemented Restful APIs using NestJS for feature authentication/authorization, manage account, booking a charging and payment.
           </li>
           <li>
-            Implemented caching data using Redis
+            Designed MySQL database schema follow data normalization to 3NF and denormalization if need. Using TypeORM, NestJS to interact to database
           </li>
           <li>
-            Implemented features authentication using JWT, authorization with access control list.
+            Implemented authentication using JWT using Redis for black-list to logout and for multiple device and OAuth 2.0 method using Google, Facebook, Apple and Kakao.
           </li>
           <li>
-            Implemented features booking a charging slot in advance before arriving at the station.
+            Implemented authorization using role base access control.
+          </li>
+          <!-- <li>
+            Implemented caching data using Redis to increase response time of APIs and reduce database workload
           </li>
           <li>
-            Setup logger with trace ID and stream logging to DataDog.
+            Implemented features booking a charging slot using database transaction to avoid overbooking.
           </li>
           <li>
-            Implemented payment flow using Stripe.
+            Implemented payment using payment gateway APIs of e-wallet PayCo
           </li>
           <li>
-            Integrate with charging stations via MQTT protocol using AWS IoT Core.
+            Implemented websocket to interact with EV charging through Open Charge Point Protocol (OCPP).
           </li>
           <li>
-            Integrate with third-party services using APIs. Asynchronous communication between services using Google Pub/Sub.
+            Setup log-center with tracing using Application Performance Monitoring (APM) Server, logging using Logstash and Elasticsearch.
           </li>
           <li>
-            Contribute to code reviews and collaborate with team members to improve product quality.
-          </li>
+            Setup linter and formatter using Eslint, Prettier to code conventions, contribute to code reviews to improve source code quality.
+          </li> -->
         </ul>
       </div>
     </div>
   </page>
   <page size="A4" class="page">
     <div class="mar-top-1-5">
+      <ul>
+        <li>
+          Implemented caching data using Redis to increase response time of APIs and reduce database workload
+        </li>
+        <li>
+          Implemented features booking a charging slot using database transaction to avoid overbooking.
+        </li>
+        <li>
+          Implemented payment using payment gateway APIs of e-wallet PayCo
+        </li>
+        <li>
+          Implemented websocket to interact with EV charging through Open Charge Point Protocol (OCPP).
+        </li>
+        <li>
+          Setup log-center with tracing using Application Performance Monitoring (APM) Server, logging using Logstash and Elasticsearch.
+        </li>
+        <li>
+          Setup linter and formatter using Eslint, Prettier to code conventions, contribute to code reviews to improve source code quality.
+        </li>
+      </ul>
+    </div>
+    <div class="mar-top-1-5">
       <p class="company-name">Metacoders</p>
       <p>Jun 2022 - Jul 2023</p>
       <div class="project mar-top">
         <p class="project-name">Project: Paction</p>
-        <p>Position: Back-end developer</p>
+        <p>Position: Full-stack developer</p>
         <p>Description: Paction is a platform where users can sell and buy pet-related products. Buyers with purchasing needs can place orders, make payments and choose from available delivery services within the system.</p>
         <p>Responsibilities:</p>
         <ul>
           <li>
-            Implemented business requirements for back-end monolithic service using NestJS. Using MySQL for database.
+            Implemented business requirements for back-end service using NestJS and Prisma ORM to query and migration PostgreSQL for database.
           </li>
           <li>
             Setup eslint, prettier for code conventions. Setup logger with trace ID and stream log to AWS CloudWatch service. Upload file to AWS S3 service. Send email function using AWS SNS service
@@ -128,7 +177,10 @@
             Implemented payment flow using NicePay.
           </li>
           <li>
-            Contribute to code reviews and collaborate with team members to improve product quality.
+            Implemented UI of web application using ReactJS (NextJS frameworks) and tailwindcss, redux toolkit and react context for state management and React Query for APIs fetching.
+          </li>
+          <li>
+            Contribute to code reviews and collaborate with team members to improve source code quality.
           </li>
         </ul>
       </div>
@@ -143,7 +195,7 @@
         <p>Responsibilities:</p>
         <ul>
           <li>
-            Implemented business requirements for back-end core service using ExpressJS with Typescript, PostgreSQL for database, Redis for caching.
+            Implemented business requirements for back-end core service using ExpressJS with Typescript, PostgreSQL for database.
           </li>
           <li>
             Implemented UI using NextJS (ReactJS), React Query for APIs fetching, state management using redux, context and hooks.
